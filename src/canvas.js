@@ -68,15 +68,15 @@ function Circle(x, y, dx, dy, radius) {
 
 let circleArray = [];
 
-for (i = 0; i < 250; i++) {
+for (i = 0; i < 1000; i++) {
 
-    let radius = 2;
+    let radius = 45;
 
     circleArray.push(circle = new Circle (
-        getRandomInt(50, innerWidth - 50),
-        getRandomInt(50, innerHeight - 50),
-        getRandomNum(-2, 2),
-        getRandomNum(-2, 2),
+        innerWidth / 2,
+        innerHeight / 2,
+        getRandomNum(-3, 3),
+        getRandomNum(-3, 3),
         radius,
         )
     )}
@@ -90,6 +90,23 @@ function animate() {
     circleArray.forEach(circle => {
         circle.update();
     })
+
+    if (window.innerWidth > 600) {
+        context.font = "bold 16rem Staatliches";
+        context.fillStyle = "#bbbbbb";
+        context.textAlign = "center";
+        context.fillText("Web Design,", innerWidth / 2, (innerHeight / 2) - 105 );
+        context.fillText("For Humans.", innerWidth / 2, (innerHeight / 2) + 105 );
+    } else {
+        context.font = "bold 8rem Staatliches";
+        context.fillStyle = "#bbbbbb";
+        context.textAlign = "center";
+        context.fillText("Web", innerWidth / 2, (innerHeight / 2) - 190 );
+        context.fillText("Design,", innerWidth / 2, (innerHeight / 2) - 90 );
+        context.fillText("For", innerWidth / 2, (innerHeight / 2) + 90 );
+        context.fillText("Humans", innerWidth / 2, (innerHeight / 2) + 190 );
+    }
+
 }
     
 animate();

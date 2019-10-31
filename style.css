@@ -1,11 +1,48 @@
 /* COLOR PALETTE */
 /* https://coolors.co/efefef-f4afab-34d1bf-070707-f4eea9 */
 
+nada {
+
+  color:  #30beae,
+    #2bac9d,
+    #26998b,
+    #22867a,
+    #1d7369,
+    #c8908c,
+}
+
 * {
     font-family: 'Roboto Mono', monospace;
 }
 
+input[type="text"], textarea {
+    background: #DADADA;
+}
+
+input[type="email"], textarea {
+    background: #DADADA;
+}
+
+textarea[id="project-description"], textarea {
+    background: #DADADA;
+}
+
+
+
 body {
+    background: #bbbbbb;
+}
+
+.btn:hover {
+    font-weight: bolder;
+}
+
+.card {
+    background: #bbbbbb;
+    border: none;
+}
+
+.jumbotron {
     background: #bbbbbb;
 }
 
@@ -54,6 +91,10 @@ html, body {
     border: 0;
     overflow-x: hidden;
     display: block;
+}
+
+#about {
+    padding-top: 45px;
 }
 
 .project {
