@@ -15,14 +15,24 @@ nada {
     font-family: 'Roboto Mono', monospace;
 }
 
-input[type="text"], textarea {
+textarea,
+input[type="text"], 
+input[type="email"],
+textarea[id="project-description"] {
     background: #DADADA;
 }
 
-input[type="email"], textarea {
-    background: #DADADA;
+textarea:focus,
+input[type="text"]:focus, 
+input[type="email"]:focus,
+textarea[id="project-description"]:focus {
+    background: #DDDDDD;
+    box-shadow: 0 1px 1px #c8908c inset, 0 0 4px #c8908c;
+    outline: 0 none;
 }
 
+input[type="text"], textarea,
+input[type="email"], textarea,
 textarea[id="project-description"], textarea {
     background: #DADADA;
 }

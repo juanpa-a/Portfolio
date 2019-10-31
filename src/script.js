@@ -44,9 +44,9 @@ for (p of projects) {
     <div class="card-body">
         <img src="${p.screenshot}" class="card-img-top" alt="Screenshot from ${p.name}">
         <div class="card-body">
-            <h5 class="card-title">${p.name}</h5>
+            <h5 class="card-title"><b>${p.name}</b></h5>
             <p class="card-text">${p.summary}</p>
-            <a href="${p.url}" target="_blank" class="btn">Check it out!</a>
+            <a href="${p.url}" target="_blank" class="btn"><u>Check it out!</u></a>
         </div>
         </div>
     </div>
