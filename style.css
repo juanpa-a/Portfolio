@@ -55,3 +55,7 @@ html, body {
     overflow-x: hidden;
     display: block;
 }
+
+.project {
+    padding-bottom: 35px;
+}

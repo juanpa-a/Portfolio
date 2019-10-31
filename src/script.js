@@ -26,3 +26,32 @@ $(document).on('click', '.nav-link', function() {
         scrollTop: ($(`#${div}`).offset().top)
     }, 1500);
 })
+
+let projects = [
+    { 
+        name : 'Hangman',
+        url : '#',
+        screenshot : 'https://via.placeholder.com/350',
+        summary : "it's cool",
+    },
+    { 
+        name : 'Hangman',
+        url : '#',
+        screenshot : 'https://via.placeholder.com/350',
+        summary : "it's cool",
+    },
+];
+
+for (p of projects) {
+    $('#projects').append(`
+        <div class="project col-lg-6 col-md-8 col-xs-12">
+            <img src="${p.screenshot}" alt="screenshot from ${p.name}" class="rounded mx-auto d-block">
+        </div>
+        <div class="col-lg-6 col-md-4 col-xs-12">
+            <p>
+                ${p.summary}
+            </p>
+        </div>
+        <hr>
+    `);  
+}
