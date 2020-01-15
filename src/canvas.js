@@ -67,16 +67,21 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 let circleArray = [];
+let amount = 250;
 
-for (i = 0; i < 1000; i++) {
+if (window.innerWidth > 800) {
+    amount = 400;
+}
 
-    let radius = 45;
+for (i = 0; i < amount; i++) {
+
+    let radius = 65;
 
     circleArray.push(circle = new Circle (
         innerWidth / 2,
         innerHeight / 2,
-        getRandomNum(-3, 3),
-        getRandomNum(-3, 3),
+        getRandomNum(-2, 2),
+        getRandomNum(-2, 2),
         radius,
         )
     )}

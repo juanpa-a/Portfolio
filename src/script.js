@@ -36,6 +36,18 @@ let projects = [
         url : 'https://juanpa-a.github.io/Ahorcado/',
         summary : "Hangman game about programming buzz words made entirely with Vanilla JavaScript and Bootstrap",
     },
+    { 
+        name : 'Jubilant Waffle',
+        screenshot : 'assets/img/jubilantWaffle.png',
+        url : 'https://jubilantwaffle.herokuapp.com/',
+        summary : "A retro choose your own adventore game with user generated stories to add a bit of spice!",
+    },
+    { 
+        name : 'Sorting Visulizer',
+        screenshot : 'assets/img/sortVis.png',
+        url : 'https://juanpa-a.github.io/SortVis/',
+        summary : "Visulizer to help you understand how sortin algorithms work.",
+    }
 ];
 
 for (p of projects) {
@@ -52,3 +64,4 @@ for (p of projects) {
     </div>
     `);  
 }
+
