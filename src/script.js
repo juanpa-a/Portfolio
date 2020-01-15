@@ -43,7 +43,7 @@ let projects = [
         summary : "A retro choose your own adventore game with user generated stories to add a bit of spice!",
     },
     { 
-        name : 'Sorting Visulizer',
+        name : 'Sorting Visualizer',
         screenshot : 'assets/img/sortVis.png',
         url : 'https://juanpa-a.github.io/SortVis/',
         summary : "Visulizer to help you understand how sortin algorithms work.",
