@@ -1,114 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Ascencio</title>
-    
-</head>
-<body>
-    <!-- Navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg">
-        <a href="#" class="navbar-brand">
-            <b>
-                Ascencio
-            </b> 
-        </a>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a id="about-button" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a id="projects-button" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a id="contact-button" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-        
-    </nav>
-    <!-- <canvas/> -->
-    <canvas>
-    </canvas>
-    
-    <div class="container">
-        <!-- About Me! -->
-        <div id="about" class="row aos-item">
-            <div class="jumbotron jumbotron-fluid">
-                <h1 class="display-4" >Who am i?</h1>
-                <p class="lead">My name is Juan Pablo Ascencio and i'm a full stack web developer with an obsession on creating simple and elegant solution to new problems both on the front-end and the back-end.</p>
-              </div>
-        </div>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-        <!-- Projects -->
-        <div id="projects" class="row">
-            <div class="col-12">
-                    <h1 id="projects-header" class="display-4">Check out some of my code...</h1>
+        <title>Ascencio</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="nav" class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand">
+                <b> Ascencio </b>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="about-button" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="projects-button" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact-button" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="card-deck">
-                <div class="row" id="projects">
+        </nav>
+        <!-- <canvas/> -->
+        <canvas> </canvas>
 
+        <div class="container">
+            <!-- About Me! -->
+            <div id="about" class="row aos-item">
+                <div class="jumbotron jumbotron-fluid">
+                    <h1 class="display-4">Who am i?</h1>
+                    <p class="lead">
+                        I’m a passionate developer who’s always looking to
+                        improve and share his skill set, tackle a new challenge
+                        and loves problem solving. I have experience working
+                        remotely and I am a fast learning autodidact with a deep
+                        love of computers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div id="projects" class="row">
+                <div class="col-12">
+                    <h1 id="projects-header" class="display-4">
+                        Check out some of my code...
+                    </h1>
+                </div>
+                <div class="card-deck">
+                    <div class="row" id="projects"></div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="row">
+                <h1 class="display-4">Get in touch with me!</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Name"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="name@example.com"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="project-description"
+                                >Please describe your project</label
+                            >
+                            <textarea
+                                type="text"
+                                class="form-control"
+                                id="project-description"
+                                placeholder="I've got this awesome project idea that involves..."
+                                rows="6"
+                            ></textarea>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn mb-2">
+                                <u>Send</u>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <!-- Contact -->
-        <div id="contact" class="row">
-            <h1 class="display-4">Get in touch with me!</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="budget">Budget</label>
-                        <input type="range" min="2" max="100" value="30" step="2" class="slider" id="budget">
-                    </div>
-                    <div class="form-group">
-                        <label for="project-description">Please describe your project</label>
-                        <textarea type="text" class="form-control" id="project-description" placeholder="I've got this awesome project idea that involves..." rows="6"></textarea>
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn mb-2"><u>Send</u></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+        <!-- Footer -->
+        <nav id="nav" class="navbar navbar-expand-lg justify-content-center">
+            <p href="#" class="nav-item">
+                <b> Made with <a id="heart">♥</a> by me. </b>
+            </p>
+        </nav>
 
-    
-    <!-- Footer -->
-    <nav id="nav" class="navbar navbar-expand-lg justify-content-center">
-        <p href="#" class="nav-item">
-            <b>
-                Made with <a id="heart">♥</a> by me.
-            </b>
-        </p>
-    </nav>
-    
-    <!-- JS Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Custom  -->
-    <script src="src/canvas.js"></script>
-    <script src="src/script.js"></script>
-
-</body>
+        <!-- JS Libraries -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Custom  -->
+        <script src="src/canvas.js"></script>
+        <script src="src/script.js"></script>
+    </body>
 </html>
